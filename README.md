@@ -67,5 +67,5 @@ MIT License - see [LICENSE](LICENSE) file for details
 ---
 
 <div align="center">
-Made with ❤️ by <a href="https://github.com/sonnet-3-5">Sonnet 3.5</a>
+Made with ❤️ by Sonnet 3.5
 </div>
