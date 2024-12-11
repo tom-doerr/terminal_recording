@@ -1,25 +1,41 @@
-# Terminal Recording Tool
+<div align="center">
 
-A simple command-line tool to record terminal sessions and automatically convert them to GIF animations using Terminalizer.
+# Terminal Recording Tool 🎥
 
-## Features
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+![GitHub last commit](https://img.shields.io/github/last-commit/tomdoerr/terminal-recording)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/tomdoerr/terminal-recording/graphs/commit-activity)
 
-- Records terminal sessions
-- Automatically converts recordings to GIF
-- Creates symlinks to latest recording and GIF
-- Saves recordings in ~/Videos/terminal_recordings
+A sleek command-line tool to record terminal sessions and automatically convert them to GIF animations using Terminalizer.
 
-## Prerequisites
+[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Contributing](#contributing)
 
-- Terminalizer (`npm install -g terminalizer`)
+</div>
 
-## Installation
+## ✨ Features
+
+- 📹 Records terminal sessions with a single command
+- 🎬 Automatically converts recordings to GIF
+- 🔗 Creates symlinks to latest recording and GIF
+- 📁 Organized storage in ~/Videos/terminal_recordings
+- 🚀 Simple installation process
+
+## 🔧 Prerequisites
+
+- Node.js and npm
+- Terminalizer: 
+  ```bash
+  npm install -g terminalizer
+  ```
+
+## 📥 Installation
 
 ```bash
 sudo ./install.sh
 ```
 
-## Usage
+## 🚀 Usage
 
 Simply run:
 ```bash
@@ -27,18 +43,29 @@ record
 ```
 
 The script will:
-1. Create a Videos/terminal_recordings directory if it doesn't exist
-2. Start recording (press Ctrl+D to stop)
-3. Automatically render the recording to GIF
-4. Create symlinks to the latest recording and GIF
+1. 📁 Create Videos/terminal_recordings directory if needed
+2. ⚡ Start recording (press Ctrl+D to stop)
+3. 🎨 Automatically render the recording to GIF
+4. 🔄 Create symlinks to latest files
 
-## Output Files
+## 📂 Output Files
 
-- Recording: `~/Videos/terminal_recordings/recording_TIMESTAMP.yml`
-- GIF: `~/Videos/terminal_recordings/recording_TIMESTAMP.gif`
-- Latest recording symlink: `~/Videos/terminal_recordings/latest_recording.yml`
-- Latest GIF symlink: `~/Videos/terminal_recordings/latest.gif`
+Your recordings will be saved as:
+- 📼 Recording: `~/Videos/terminal_recordings/recording_TIMESTAMP.yml`
+- 🎞️ GIF: `~/Videos/terminal_recordings/recording_TIMESTAMP.gif`
+- 🔗 Latest recording symlink: `~/Videos/terminal_recordings/latest_recording.yml`
+- 🔗 Latest GIF symlink: `~/Videos/terminal_recordings/latest.gif`
 
-## License
+## 🤝 Contributing
 
-MIT License - see LICENSE file for details
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details
+
+---
+
+<div align="center">
+Made with ❤️ by <a href="https://github.com/tomdoerr">Tom Dörr</a>
+</div>
