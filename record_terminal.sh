@@ -12,7 +12,7 @@ echo "Starting terminal recording..."
 echo "Press Ctrl+D to stop recording"
 
 # Record the terminal session
-terminalizer record "$RECORDING_FILE"
+terminalizer record "$RECORDING_FILE" --skip-sharing
 
 # Render the recording to gif
 echo "Rendering recording to gif..."
