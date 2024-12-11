@@ -18,6 +18,13 @@ terminalizer record "$RECORDING_FILE"
 echo "Rendering recording to gif..."
 terminalizer render "$RECORDING_FILE"
 
+# Create symlinks to latest files
+ln -sf "$RECORDING_FILE" "$VIDEOS_DIR/latest_recording.yml"
+ln -sf "${RECORDING_FILE%.*}.gif" "$VIDEOS_DIR/latest.gif"
+
 echo "Done!"
 echo "Recording saved to: $RECORDING_FILE"
 echo "Rendered gif saved to: ${RECORDING_FILE%.*}.gif"
+echo "Symlinks created:"
+echo "  Latest recording: $VIDEOS_DIR/latest_recording.yml"
+echo "  Latest gif: $VIDEOS_DIR/latest.gif"
